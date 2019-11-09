@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1eafab45-bb13-49d4-9ae0-259b781c15f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deep_copy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/equal_copy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shallow_copy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/copy_deep_shallow.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/deep copy shallow copy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/deep copy shallow copy.txt" afterDir="false" />
+    <list default="true" id="1eafab45-bb13-49d4-9ae0-259b781c15f4" name="Default Changelist" comment="Detail info added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deep_copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/deep_copy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shallow_copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/shallow_copy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,12 +13,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shallow_copy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="156">
               <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deep copy shallow copy.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="87" lean-forward="true" selection-start-line="12" selection-start-column="87" selection-end-line="12" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deep_copy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -34,8 +50,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/copy_deep_shallow.py" />
-        <option value="$PROJECT_DIR$/deep_copy.py" />
         <option value="$PROJECT_DIR$/equal_copy.py" />
+        <option value="$PROJECT_DIR$/deep copy shallow copy.txt" />
+        <option value="$PROJECT_DIR$/deep_copy.py" />
         <option value="$PROJECT_DIR$/shallow_copy.py" />
       </list>
     </option>
@@ -61,21 +78,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Pythonic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pythonic" type="462c0819:PsiDirectoryNode" />
+              <item name="Shallow_Deep_Copy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shallow_Deep_Copy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -95,7 +113,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.shallow_copy">
+  <component name="RunManager" selected="Python.deep_copy">
     <configuration name="copy_deep_shallow" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Pythonic" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,6 +127,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="D:\Omkar Personal\Career\Copy_Shallo_Deep\Pythonic\equal_copy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="deep_copy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Pythonic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deep_copy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,6 +179,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.deep_copy" />
         <item itemvalue="Python.shallow_copy" />
         <item itemvalue="Python.copy_deep_shallow" />
       </list>
@@ -156,6 +196,14 @@
       <option name="presentableId" value="Default" />
       <updated>1573304103604</updated>
     </task>
+    <task id="LOCAL-00001" summary="Detail info added">
+      <created>1573320337813</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573320337813</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -171,7 +219,7 @@
       <window_info anchor="bottom" id="Python Console" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3690476" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.42006803" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39965987" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -180,6 +228,10 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Detail info added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Detail info added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -208,13 +260,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deep_copy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/equal_copy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -222,9 +267,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/deep copy shallow copy.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="87" lean-forward="true" selection-start-line="12" selection-start-column="87" selection-end-line="12" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deep_copy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/shallow_copy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="156">
           <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>

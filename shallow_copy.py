@@ -1,5 +1,5 @@
 import copy
-# SC = Shallow copy actually creates a new object which stores reference of original object,
+# SC = Shallow copy actually creates a new object but stores reference of original object.
 
 original_list = [[1,2,3,],[4,5,6],[7,8,9]]
 copy_list = copy.copy(original_list)
@@ -34,14 +34,14 @@ print("Copied List after append in copy_list : ",copy_list)		#Output : [[1, 2, 3
 print("Id of Original List 3th element : ",id(original_list[3]))
 print("Id of Copied List 3th element  : ",id(copy_list[3]))
 
-# Value of "D" will be copied to both Original & Copied List, because of above reason : line 30 to 33
+# Value of "D" will be added to both Original & Copied List, because of above reason : line 30 to 33
 copy_list[1][1]="D"
-# Value of "X" will not be copied to both Original & Copied List, because of above reason : line 30 to 33
+# Value of "X" will not be added to both Original & Copied List, because of above reason : line 30 to 33
 copy_list[3][1]="X"
 
-# Value of "M" will be copied to both Original & Copied List, because of above reason : line 30 to 33
+# Value of "M" will be added to both Original & Copied List, because of above reason : line 30 to 33
 original_list[1][2]="M"
-# Value of "N" will not be copied to both Original & Copied List, because of above reason : line 30 to 33
+# Value of "N" will not be added to both Original & Copied List, because of above reason : line 30 to 33
 original_list[3][2]="N"
 
 print("New Original List : ",original_list)		#Output : [[1, 2, 3], [4, 'D', 'M'], [7, 8, 9], ['a', 'b', 'N']]

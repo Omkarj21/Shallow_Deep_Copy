@@ -1,18 +1,47 @@
 import copy
-list1 = [[1,2,3,],[4,5,6],[7,8,9]]
-list2 = list1
+# DC = Deep copy actually creates a new object also creates new references of nested object, This is not
+# like Shallow Copy
 
-print("List 1 : ",list1)		# Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-print("List 2 : ",list2)		# Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+original_list = [[1,2,3,],[4,5,6],[7,8,9]]
+copy_list = copy.deepcopy(original_list)
 
-# result/output of below 2 lines will be same as it is not creating new object it is just using the reference
-print("Id of List 1 : ",id(list1))
-print("Id of List 2 : ",id(list2))
+# creating new object with 3 nested objects, both result will be same
+print("Original List : ",original_list)		# Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print("Copied List : ",copy_list)		# Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
-list1.append([10,11,12])
-print("List 1 after append in list 1 : ",list1)		#Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]
-print("List 2 after append in list 1 : ",list2)		#Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]
+# result/output of below 2 lines will not be same as it is creating new object with new nested objects
+# it will not share reference of original nested objects.
+# This is not like Shallow copy
+print("Id of Original List : ",id(original_list))
+print("Id of Copied List : ",id(copy_list))
 
-list2.append([13,14,15])
-print("List 1 after append in list 2 : ",list1)		#Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15]]
-print("List 2 after append in list 2 : ",list2)		#Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15]]
+# result/output of below 2 lines will not be same as it is not sharing the reference of nested elements of original object
+# This is not like Shallow copy
+print("Id of Original List 0th element : ",id(original_list[0]))
+print("Id of Copied List 0th element  : ",id(copy_list[0]))
+
+original_list.append(["a","b","c"])
+print("Original List after append in original_list : ",original_list)		#Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9], ['a', 'b', 'c']]
+print("Copied List after append in original_list : ",copy_list)		#Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+copy_list.append(["p","q","r"])
+print("Original List after append in copy_list : ",original_list)		#Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9], ['a', 'b', 'c']]
+print("Copied List after append in copy_list : ",copy_list)		#Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9], ['p', 'q', 'r']]
+
+# result/output of below 2 lines will not be same as it is not sharing the reference of nested elements of
+# original object
+print("Id of Original List 3th element : ",id(original_list[3]))
+print("Id of Copied List 3th element  : ",id(copy_list[3]))
+
+# Value of "D" will be added to Copied List only, because No connection between Original & Copied List
+copy_list[1][1]="D"
+# Value of "X" will be added to Copied List only, because No connection between Original & Copied List
+copy_list[3][1]="X"
+
+# Value of "M" will be copied to Original List only, because No connection between Original & Copied List
+original_list[1][2]="M"
+# Value of "N" will not be copied to Original List only, because No connection between Original & Copied List
+original_list[3][2]="N"
+
+print("New Original List : ",original_list)		#Output : [[1, 2, 3], [4, 5, 'M'], [7, 8, 9], ['a', 'b', 'N']]
+print("New Copied List : ",copy_list)		#Output : [[1, 2, 3], [4, 'D', 6], [7, 8, 9], ['p', 'X', 'r']]
