@@ -44,5 +44,5 @@ original_list[1][2]="M"
 # Value of "N" will not be copied to both Original & Copied List, because of above reason : line 30 to 33
 original_list[3][2]="N"
 
-print("Original List after append in copy_list : ",original_list)		#Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15]]
-print("Copied List after append in copy_list : ",copy_list)		#Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15]]
+print("New Original List : ",original_list)		#Output : [[1, 2, 3], [4, 'D', 'M'], [7, 8, 9], ['a', 'b', 'N']]
+print("New Copied List : ",copy_list)		#Output : [[1, 2, 3], [4, 'D', 'M'], [7, 8, 9], ['p', 'X', 'r']]
