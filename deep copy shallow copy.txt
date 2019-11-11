@@ -11,3 +11,23 @@ Deep Copy and Shallow Copy in Python :
 - In Python, there are two ways to create copies, Deep Copy and Shallow Copy
 - In order to make these copy, we use copy module.
 - We use copy.copy command for shallow_copy and copy.deepcopy for deep_copy operations.
+
+-------------------------
+>> Equal Copy
+If you use "=" sign then equal copy takes place
+append : Both
+update : Both
+delete : Both
+-------------------------
+>> Shallow Copy
+If you use "copy.Copy" then equal copy takes place
+append : Individual, No affect on copied object
+update : To Both upto elements which were in initially present at the time of copy command
+delete : Individual, No affect on copied object
+-------------------------
+>> Deep Copy
+If you use "copy.deepcopy" sign then equal copy takes place
+append : Individual, No affect on copied object
+update : Individual, No affect on copied object
+delete : Individual, No affect on copied object
+-------------------------

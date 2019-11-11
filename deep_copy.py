@@ -45,3 +45,14 @@ original_list[3][2]="N"
 
 print("New Original List : ",original_list)		#Output : [[1, 2, 3], [4, 5, 'M'], [7, 8, 9], ['a', 'b', 'N']]
 print("New Copied List : ",copy_list)		#Output : [[1, 2, 3], [4, 'D', 6], [7, 8, 9], ['p', 'X', 'r']]
+
+
+#This will delete 1st index element from Original list only, No affect on Copy list
+original_list.pop(1)
+print("original_list after delete in original_list : ",original_list)		#Output : [[1, 2, 3], [7, 8, 9], ['a', 'b', 'N']]
+print("copy_list after delete in original_list : ",copy_list)		#Output : [[1, 2, 3], [4, 'D', 'M'], [7, 8, 9], ['p', 'X', 'r']]
+
+#This will delete [7, 8, 9] element from Copy list only, No affect on Original list
+copy_list.remove([7, 8, 9])
+print("original_list after delete in copy_list : ",original_list)		#Output : [[1, 2, 3], [7, 8, 9], ['a', 'b', 'N']]
+print("copy_list after delete in copy_list : ",copy_list)		#Output : [[1, 2, 3], [4, 'D', 'M'], ['p', 'X', 'r']]

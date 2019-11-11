@@ -15,3 +15,19 @@ print("List 2 after append in list 1 : ",list2)		#Output : [[1, 2, 3], [4, 5, 6]
 list2.append([13,14,15])
 print("List 1 after append in list 2 : ",list1)		#Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15]]
 print("List 2 after append in list 2 : ",list2)		#Output : [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14, 15]]
+
+list1[1][2]="M"
+print("List 1 after change in list 1 : ",list1)		#Output : [[1, 2, 3], [4, 5, 'M'], [7, 8, 9], [10, 11, 12], [13, 14, 15]]
+print("List 2 after change in list 1 : ",list2)		#Output : [[1, 2, 3], [4, 5, 'M'], [7, 8, 9], [10, 11, 12], [13, 14, 15]]
+
+list2[1][1]="N"
+print("List 1 after change in list 2 : ",list1)		#Output : [[1, 2, 3], [4, 'N', 'M'], [7, 8, 9], [10, 11, 12], [13, 14, 15]]
+print("List 2 after change in list 2 : ",list2)		#Output : [[1, 2, 3], [4, 'N', 'M'], [7, 8, 9], [10, 11, 12], [13, 14, 15]]
+
+list1.pop(1)
+print("List 1 after delete in list 1 : ",list1)		#Output : [[1, 2, 3], [7, 8, 9], [10, 11, 12], [13, 14, 15]]
+print("List 2 after delete in list 1 : ",list2)		#Output : [[1, 2, 3], [7, 8, 9], [10, 11, 12], [13, 14, 15]]
+
+list2.remove([13, 14, 15])
+print("List 1 after delete in list 2 : ",list1)		#Output : [[1, 2, 3], [7, 8, 9], [10, 11, 12]]
+print("List 2 after delete in list 2 : ",list2)		#Output : [[1, 2, 3], [7, 8, 9], [10, 11, 12]]
