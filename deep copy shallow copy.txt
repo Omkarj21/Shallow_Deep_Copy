@@ -20,13 +20,13 @@ update : Both
 delete : Both
 -------------------------
 >> Shallow Copy
-If you use "copy.Copy" then equal copy takes place
+If you use "copy.Copy" then Shallow copy takes place
 append : Individual, No affect on copied object
 update : To Both upto elements which were in initially present at the time of copy command
 delete : Individual, No affect on copied object
 -------------------------
 >> Deep Copy
-If you use "copy.deepcopy" sign then equal copy takes place
+If you use "copy.deepcopy" sign then Deep copy takes place
 append : Individual, No affect on copied object
 update : Individual, No affect on copied object
 delete : Individual, No affect on copied object
